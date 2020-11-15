@@ -12,7 +12,7 @@ document.getElementById('xy').play();
     result.textContent = `هيوصلك ${theResult}  جنيه `;
   }
   if (this.value >= 1000000) {
-    result.textContent = `😂😂 بتجرب رقم معدي المليون  يبني فوق  انت كحياااان `;
+    result.textContent = ` بتجرب رقم معدي المليون  يبني فوق  انت كحياااان `;
   }
   if (this.value < 0) {
     result.textContent = ` ازي بقي انا عاوز حضرتك تفهني ازي`;
