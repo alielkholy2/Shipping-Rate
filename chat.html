@@ -1,0 +1,140 @@
+
+<!DOCTYPE HTML> 
+<html> 
+    <link rel="icon" href="cyber.png">
+    <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+        <script src="crypto33.js"></script>
+
+    
+<head> 
+    
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+    
+    <title> 
+       cyper-security
+    </title> 
+</head> 
+    
+    
+  
+<body style="text-align:center;"> 
+       <center>
+       <div class="w"> 
+           
+           <h2>
+           v 0.1    
+نظام تشفير الملفات                 
+               <br>
+                <i class="fas fa-lock"></i>
+           </h2>
+        <p id="geeks">كلمة المرور المولدة</p> 
+           <button onclick="gfg_Run()" id="btn1" class="fa fa-user-lock" > 
+               <a> توليد كلمة مرور جديدة</a>
+           </button> 
+           <h4>فيسبوك , تويتر , انستجرام  <br>
+            وغيرها من التطبيقات او المواقع التي تتطلب كلمة مرور 
+                <br>
+               ستكون  في أمان  باستخدام كلمات المرور العشوائية المولدة أعلاه
+           </h4>
+          <button class="fa fa-user-secret" id="btn" onclick="document.getElementById('id01').style.display='block'"> 
+<a href="#">
+              تشفير وفك تشفير الرسائل
+              </a>
+    </button> 
+    </div> 
+    </center>
+    <br> 
+      
+    <div> 
+        <p id="geeks" class="p"></p> 
+    </div> 
+     
+        
+
+    </div>
+ <div id="id01" class="modal">
+      <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="cyber.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <div class="content-voilet0">
+            <p>أدخل مفتاح التشفير الخاص بك</p>
+            <input class="passcode" type="password" id="passcode" placeholder="يجب تذكره جيدا حتي تتمكن من فك تشفير الرسائل" />
+        </div>
+        <div class="content-voilet0">
+              <p>أدخل محتوي الرسالة المراد تشفيرها أو فك تشفيرها</p>
+            <textarea id="originalContent"></textarea>
+        </div>
+        <div class="content-voilet0">
+            <center>
+             <button class="encrypt" onclick="Crypto33.setEncrypt('originalContent','encryptedContent','passcode')" id="a">تشفير</button></center>
+            <textarea id="encryptedContent" readonly placeholder="الرسالة المشفرة تظهر هنا"></textarea>
+        </div>
+        <div class="content-voilet0">
+            <center>
+           <button class="encrypt" onclick="Crypto33.setDecrypt('originalContent','decryptedContent','passcode')">فك تشفير</button></center>
+            <textarea id="decryptedContent" readonly placeholder="الراسلة المراد فك تشفيرها تظهر هنا" ></textarea>
+        </div>
+        <br>
+     
+     
+    </div>
+
+
+  </form>
+</div>
+</div>
+    <script> 
+ 
+        var el_down = document.getElementById("geeks"); 
+  
+        function generateP() { 
+            var pass = '#' ; 
+            var str = 'دجحخهعغفقثصضذشسيبلاتنمكطظزوةىلارؤءئ' +  
+                    'AaBbCcDdEeFfgGHhJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+                          
+             +'1234567890012345678900'
+ +'#*#%#@#^'
+            ; 
+              
+            for (i = 1; i <= 10; i++) { 
+                var char = Math.floor(Math.random() 
+                            * str.length + 1); 
+                  
+        pass += str.charAt(char) 
+            } 
+              
+            return pass; 
+        } 
+  
+        function gfg_Run() { 
+            el_down.innerHTML = generateP(); 
+        } 
+       
+    </script> 
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	
+  <div class="footer">
+    <h6>  <a href="www.facebook.com/ali.elkholy.144">ALI ELKHOLY</a> /  تمت عملية الإنشاء عن طريق المهندس  </h6>
+    </div>
+
+</body> 
+  
+</html> 
