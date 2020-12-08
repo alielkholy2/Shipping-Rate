@@ -8,7 +8,7 @@
   display: inline-block;
   font-size: 15px;
     transition: 0.5s;
-    margin-top: 70px;
+    margin-top: 0px;
  
 }
 
@@ -82,7 +82,7 @@ span{
   background-color: #000; 
 color: aliceblue;
     border: 0px;
-    padding: 20px;
+    padding: 20px 13px;
     font-size: 15px;
     transition: 0.4s
 
@@ -213,8 +213,10 @@ textarea{
     direction: rtl;
 text-align: center;
     padding: 2px;
-    border: 2px solid;
+    border: auto solid;
     font-family: cairo;
+    
+    border-radius: 5px
 
 }
 .passcode{
@@ -224,7 +226,8 @@ text-align: center;
     margin-bottom: 1%;
     text-align: center;
         font-family:cairo;
-        border: 2px solid;
+        border: 1px  solid;
+    border-radius: 5px
 
 }
 .encrypt{
@@ -248,11 +251,15 @@ text-align: center;
 .contauner{
     
 }
-@media screen and (max-width: 700px) {
-    .w {
-  width: 50%;
-height: auto;
-    position: relative
-    }
-    
+h3{
+color: lightslategrey;
+    font-size: 15px
 }
+span{
+    font-size: 15px;
+        text-align: center;
+    padding: 0px;
+    color: red;
+
+}
+ئ
