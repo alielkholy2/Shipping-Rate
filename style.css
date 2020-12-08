@@ -140,7 +140,8 @@ a{
     color: black;
 }
 .footer{
-  text-align: center
+  text-align: center;
+    position: fixed;
 }
 h6{
     text-align: center;
