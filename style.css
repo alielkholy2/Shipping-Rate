@@ -132,7 +132,7 @@ position: absolute;
 
 #vid1{
 position: fixed;
-    top: 35%;
+    top: 39%;
     
     }
     #result{
@@ -157,7 +157,7 @@ font-weight: bold ;
        #vid2{
 position: absolute;
      left: 20%      ;
-       top: 35%;
+       top: 39%;
        width: 60%;
        margin: 0px;
            visibility: hidden
@@ -165,7 +165,7 @@ position: absolute;
 #vid3{
     position: absolute;
      left: 20%      ;
-       top: 35%;
+       top: 39%;
        width: 60%;
        margin: 0px;
                visibility: hidden
