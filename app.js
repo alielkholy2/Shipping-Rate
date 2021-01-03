@@ -12,11 +12,24 @@ document.getElementById('vid').pause();
       document.getElementById('vid').currentTime = 0;
               document.getElementById('vid3').pause();
            document.getElementById('vid3').style.visibility = "hidden";
+       document.getElementById('vid3').currentTime = 0;
+
               document.getElementById('vid2').pause();
            document.getElementById('vid2').style.visibility = "hidden";
- document.getElementById('vid3').currentTime = 0;
+ document.getElementById('vid2').currentTime = 0;
+      
+      
+          document.getElementById('vid4').pause();
+           document.getElementById('vid4').style.visibility = "hidden";
+ document.getElementById('vid4').currentTime = 0;
 
- document.getElementById('vid3').currentTime = 0;
+      
+      
+          document.getElementById('vid5').pause();
+           document.getElementById('vid5').style.visibility = "hidden";
+ document.getElementById('vid5').currentTime = 0;
+
+
 
   } else {
     result.textContent = `الرصيد اللي هيوصلك ${theResult}  جنيه `;
