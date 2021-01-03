@@ -215,7 +215,7 @@ document.getElementById('vid').play();
     
     if  ((this.value >=100001) && (this.value < 1000000))
 {
-        result.textContent = `فعلا والله بس مشكلة هيجيلك يا عم  ${theResult}  جنيه `;
+        result.textContent = `فعلا والله بس مش مشكلة هيتشحن يا عم  ${theResult}  جنيه `;
 
     document.getElementById('vid4').play();
     
