@@ -11,7 +11,7 @@ background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, F
  
   justify-content: center;
   align-items: center;
-margin-top: 0px;
+margin-top: -15px;
 max-width: 100%}
 .content {
   color: white;
@@ -27,7 +27,7 @@ max-width: 100%}
 input{
     display:block;
     width: 300px;
-    height: 40px
+    height: 30px
     
 }
 .s1{
@@ -144,14 +144,14 @@ font-weight: bold ;
 }
 }
     .footer {
-   position: relative;
+   position: absolute;
    left: 0;
    bottom: 10;
    width: 100%;
    background-color: transparent;
    color: white;
    text-align: center;
-        margin-top: 160px
+        margin-top: 180px
 }
     
        #vid2{
