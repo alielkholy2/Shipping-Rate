@@ -42,7 +42,8 @@ document.getElementById('vid').pause();
   }
     
   if (this.value >= 1000000) {
-    result.textContent = ` إنت يبني عمرك مسكت أكتر من 25 جنيه ف ايدك متفوووووق يبني بس أنا هطلع جدع معاك <br> هيتشحن${theResult}  جنيه    `;
+    result.textContent = ` إنت يبني عمرك مسكت أكتر من 25 جنيه ف ايدك متفوووووق يبني بس أنا هطلع جدع معاك 
+يتشحن${theResult}  جنيه    `;
   }
   
    if(this.value >= 1000000)
