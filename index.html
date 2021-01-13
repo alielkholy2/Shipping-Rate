@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+          <meta http-equiv="refresh" content="300">
+
+       <script src="crypto33.js"></script>
+    <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+	<title> TWASOOL </title>
+</head>
+
+	<body onload="checkCookie()" style="text-align: center">
+
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">الصفحة الرئيسية</a>
+  <a href="site.html">معلومات عنك</a>
+
+    <img src="assassin_s_creed_anonymous_icon__isaaclee126__by_isaaclee126_d84va6m-fullview-removebg-preview.png" class="img">
+  <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+              <center>
+       <div class="w"> 
+           
+           <h2>
+           v 0.1    
+نظام أمان                 
+               <br>
+                <i class="fas fa-lock" id="i"></i>
+           </h2>
+             <h3> سيتم حذف البيانات تلقائيا  بعد <span id="time">05:00 </span></h3>
+        <p id="geeks">تظهر هنا كلمة المرور المولدة</p> 
+           <button onclick="gfg_Run()" id="btn1" class="fa fa-user-lock" > 
+               <a> توليد كلمة مرور جديدة</a>
+           </button> 
+           <br>
+         <br><button class="fa fa-user-secret" id="btn" onclick="document.getElementById('id01').style.display='block'"> 
+<a href="#">
+              تشفير وفك تشفير الرسائل
+              </a>
+    </button> 
+    </div> 
+
+          
+    </center>
+    <br> 
+      
+    <div> 
+    
+    </div> 
+     
+        
+
+    </div>
+ <div id="id01" class="modal">
+      <form class="modal-content animate" action="#">
+    <div class="imgcontainer">
+      
+     
+    </div>
+
+    <div class="container">
+      <div class="content-voilet0">
+            <p>أدخل مفتاح التشفير الخاص بك</p>
+            <input class="passcode" type="password" id="passcode" placeholder="***يجب تذكره جيدا*** " maxlength="5">
+       
+        <div class="content-voilet0">
+             <p>أدخل محتوي الرسالة المراد تشفيرها أو فك تشفيرها</p>
+            <textarea id="originalContent" placeholder=""></textarea>
+        </div>
+        <div class="content-voilet0">
+            <center>
+             <button class="encrypt" onclick="Crypto33.setEncrypt('originalContent','encryptedContent','passcode')" id="a">تشفير</button>
+      
+</center>
+            <textarea id="encryptedContent" readonly placeholder="الرسالة المشفرة تظهر هنا"></textarea>
+        </div>
+        <div class="content-voilet0">
+            <center>
+           <button class="encrypt" onclick="Crypto33.setDecrypt('originalContent','decryptedContent','passcode')">فك تشفير</button></center>
+            <textarea id="decryptedContent" readonly placeholder="الراسلة المراد فك تشفيرها تظهر هنا" ></textarea>
+        </div>
+        <br>
+     
+     
+    </div>
+
+
+  </form>
+     
+</div>
+    
+</div>
+    <script> 
+ 
+        var el_down = document.getElementById("geeks"); 
+  
+        function generateP() { 
+            var pass = '#' ; 
+            var str = 'القاضية#ممكن#سماح#صفاء#ولاء#انشراح ابتسام#رستر*الراتر#حمو-بيكا$حسن#شاكوش' +  
+                    'AaBbCcDdEeFfgGHhJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+                          
+             +'1234567890012345678900'
+ +'#*#%#@#^'
+            ; 
+              
+            for (i = 1; i <= 10; i++) { 
+                var char = Math.floor(Math.random() 
+                            * str.length + 1); 
+                  
+        pass += str.charAt(char) 
+            } 
+              
+            return pass; 
+        } 
+  
+        function gfg_Run() { 
+            el_down.innerHTML = generateP(); 
+        } 
+       
+    </script> 
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+   <div class="footer">
+    <h6>Created By <i class="fas fa-laptop-code" id="f"></i><a href="https://www.facebook.com/ali.elkholy.144" target="_blank">ALI ELKHOLY</a></h6></div>
+      
+</body>
+        
+</html>

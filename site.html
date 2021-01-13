@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML> 
+<html> 
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cyber.png">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+        <script src="crypto33.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head> 
+    
+    <link rel="stylesheet" type="text/css" href="css.css">
+    
+    
+    <title> 
+       cyper-security
+    </title> 
+</head> 
+    
+    
+  
+<body style="text-align:center;"> 
+   
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">الصفحة الرئيسية</a>
+  <a href="site.html">معلومات عنك</a>
+
+    <img src="assassin_s_creed_anonymous_icon__isaaclee126__by_isaaclee126_d84va6m-fullview-removebg-preview.png" class="img">
+  <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div> 
+  
+        <script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+         <script> 
+        /* Add "https://api.ipify.org?format=json" statement 
+           this will communicate with the ipify servers in 
+           order to retrieve the IP address $.getJSON will 
+           load JSON-encoded data from the server using a 
+           GET HTTP request */ 
+  
+        $.getJSON("https://api.ipify.org?format=json", 
+                                          function(data) { 
+  
+            // Setting text of element P with id gfg 
+            $("#gfg").html(data.ip); 
+        }) 
+    </script> 
+
+        <div class="container">
+        
+        <div class="header">
+
+            </div>
+        </div>
+           <section>
+      
+
+ </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        <table id="customers">
+  <tr>
+    <th>Your ip</th>
+    <th>OS</th>
+          <th>Browser</th>
+
+    <th>Country</th>
+    <th>Languge</th>
+
+  </tr>
+  <tr>
+      <td><p id="gfg"></p></td>
+      <td><p id="os"></p></td>
+            <td><p id="browser"></p></td>
+
+      <td><p class="country"></p></td>
+            <td class="td">  <script>  
+        var usrlang = navigator.language  
+                || navigator.userLanguage; 
+        document.write(usrlang); 
+    </script> </td>
+
+
+  </tr>
+
+</table>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+    
+<script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $.get("http://ipinfo.io",function(response){
+                console.log(response);
+     
+                $(".city").html(response.city);
+                $(".country").html(response.country);
+                $(".region").html(response.region);
+            },"jsonp");
+        
+        }); 
+    </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
+     <script>
+     document.getElementById('os').textContent = platform.os;
+     document.getElementById('browser').textContent = platform.name;
+     document.getElementById('version').textContent = platform.version;
+     document.getElementById('layout').textContent = platform.layout;
+     document.getElementById('description').textContent = platform.description;
+    </script>
+
+</body> 
+  
+</html> 

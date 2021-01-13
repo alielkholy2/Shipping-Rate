@@ -3,7 +3,7 @@ var Crypto33 = {
         document.getElementById(destination).innerText = this.encryptCodes(document.getElementById(source).value,document.getElementById(passcode).value);
     },
     setDecrypt: function() {
-                document.getElementById('decryptedContent').innerText = this.decryptCodes(document.getElementById('originalContent').value,document.getElementById('passcode').value);
+         document.getElementById('decryptedContent').innerText = this.decryptCodes(document.getElementById('originalContent').value,document.getElementById('passcode').value);
     },
     encryptCodes: function(content,passcode) {
         var result = []; var passLen = passcode.length ;
