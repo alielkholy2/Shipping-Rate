@@ -11,7 +11,19 @@
     margin-top: 0px;
  
 }
-
+#copy{
+    background-color: #000; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+    margin-top: -10px;
+    font-family: cairo;
+    margin-bottom: 5px;
+    width: 40%;
+}
 #btn1:hover{
 background-color: lightslategrey;
  color: black;
@@ -19,12 +31,14 @@ background-color: lightslategrey;
 
 html{
     font-family: cairo;
+      background-color:#1F2739;
+
  
 }
 body{
        padding: 0;
     margin: 0;
-    background: darkcyan;
+   
    
 }
 p{
@@ -73,7 +87,9 @@ h6{
     color: #FFD748
 }
 p{
-    margin-top: 40px
+    margin-top: 40px;
+    color: goldenrod;
+    font-weight: bold
 }
 h4{
         color: lightslategrey
@@ -92,7 +108,8 @@ color: aliceblue;
     border: 0px;
     padding: 20px 13px;
     font-size: 15px;
-    transition: 0.4s
+    transition: 0.4s;
+    color: goldenrod
 
 }
 #btn a{
@@ -106,6 +123,10 @@ color: aliceblue;
     padding-left: 20px
 
 }
+#btn1 {
+ color: goldenrod
+
+}
 
 #btn:hover{
 background-color: lightslategrey;
@@ -117,15 +138,14 @@ background-color: lightslategrey;
   position: fixed; 
   z-index: 1; 
   left: 0;
-  top: 0;
+  top: 0%;
   width: 100%; 
   height: 100%; 
   overflow: hidden; 
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
-  padding-top: 0px;
+background-color:#1F2739;
+  padding-top: 20px;
+    color: goldenrod
 }
-
 .modal-content {
 background: #16222A;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
@@ -135,18 +155,22 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
  
   width: 80%; 
     color: antiquewhite;
+   
 }
-
-/* The Close Button (x) */
 .close {
   position: absolute;
-  right: 25px;
-  top: -40px;
-  color: darkred;
+  right: 20px;
+  top: -9px;
   font-size: 35px;
   font-weight: bold;
     
 
+}
+#mask1{
+    color: darkgrey
+}
+#mask1:hover{
+    color: white
 }
 
 .close:hover,
@@ -155,6 +179,7 @@ background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, F
   cursor: pointer;
     
 }
+
 
 /* Add Zoom Animation */
 .animate {
@@ -196,20 +221,21 @@ margin-top: -5px
 }
 textarea{
     width: 90%;
-    height: 60px;
-    max-height: 40px;
+    height: 90px;
+    max-height: 90px;
     min-height: 60px;
-max-width: 90%;
+    max-width: 90%;
     min-width: 90%;
     direction: rtl;
-text-align: center;
+    text-align: center;
     padding: 2px;
-    border: auto solid;
+    border: 0 solid;
     font-family: cairo;
     
     border-radius: 5px;
-    background: black;
-    color: white;
+    background-color: black;
+    color: goldenrod;
+    font-weight: bold
     
 
 }
@@ -223,7 +249,7 @@ text-align: center;
         border: 0px;
     border-radius: 5px;
     background: black;
-    color: white
+    color: goldenrod
 
 }
 .encrypt{
@@ -238,9 +264,7 @@ text-align: center;
     font-family: cairo;
     margin-bottom: 5px;
     width: 40%;
-    -webkit-box-shadow: 4px 6px 10px 0px rgba(46,23,46,1);
--moz-box-shadow: 4px 6px 10px 0px rgba(46,23,46,1);
-box-shadow: 4px 6px 10px 0px rgba(46,23,46,1);
+    
     
 }
 #a{
@@ -258,7 +282,7 @@ span{
     font-size: 15px;
         text-align: center;
     padding: 0px;
-    color: black;
+    color: goldenrod;
 
 }
 
@@ -266,26 +290,30 @@ span{
     width: 5%
 }
 
-span{
-    color: red
-}
+
 #geeks{
-    border: 1px dashed #BDD100;
+    border: 1px dashed goldenrod;
     padding: 5px;
-    width: 42%;
+    width: 40%;
     color: navajowhite
 }
 #time{
-    color: gold
+    color: goldenrod;
+    padding-right: 5px;
+    
+    
 }
 #encryptedContent{
-    color: green
+    color: goldenrod;
+    font-weight: bold;
 }
 #decryptedContent{
-    color: red
+    color: goldenrod;
+    font-weight: bold
 }
-body{
-     background: #C33764;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+::placeholder {
+  color: goldenrod;
+}
+tr{
+    text-align: center
 }
