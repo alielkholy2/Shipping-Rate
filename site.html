@@ -3,6 +3,8 @@
 <html> 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
+<link rel="icon" href="protection.png">
+
 
 <link rel="stylesheet" href="style.css">
     <link rel="icon" href="cyber.png">
@@ -17,21 +19,22 @@
     <link rel="stylesheet" type="text/css" href="css.css">
     
     
-    <title> 
-       cyper-security
-    </title> 
+	<title> SAFTEY </title>
+
 </head> 
     
     
   
-<body style="text-align:center;"> 
+<body style="text-align:center;" id="body"> 
    
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active">الصفحة الرئيسية</a>
-  <a href="site.html">معلومات عنك</a>
+  <a href="index.html" >الصفحة الرئيسية</a>
+  <a href="site.html" class="active">معلومات عنك</a>
+<a href="video.html">شرح الإستخدام</a>
 
-    <img src="assassin_s_creed_anonymous_icon__isaaclee126__by_isaaclee126_d84va6m-fullview-removebg-preview.png" class="img">
+     <i class="fas fa-user-secret" id="mask"></i>
+
   <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
     <i class="fa fa-bars"></i>
   </a>
@@ -64,20 +67,43 @@
            <section>
          
         
-        <center>
-  
+  <table class="container">
 
-     
-
-<h4>ip :<p id="gfg"></p></h4>
-<h4>os :<p id="os"></p></h4>
-<h4>browser :<p id="browser"></h4>
-<h4>country :<p class="country"></p></h4>
-            <h4>Languge : <p><script>  
+	<tbody>
+		<tr>
+			<td>IP</td>
+			<td><p id="gfg"></p></td>
+	
+		</tr>
+		<tr>
+			<td>Os</td>
+			<td><p id="os"></p></td>
+		
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td><p class="country"></td>
+		
+		</tr>
+    <tr>
+			<td>Browser</td>
+      <td><p id="browser"></p></td>
+		
+		</tr>
+    <tr>
+			<td>Languge</td>
+			<td><p><script>  
         var usrlang = navigator.language  
                 || navigator.userLanguage; 
         document.write(usrlang); 
-    </script></p> </h4>      
+    </script></p></td>
+		
+		</tr>
+   
+	</tbody>
+</table>
+
+          
                </center>
 
  </section>
@@ -131,5 +157,6 @@ window.onclick = function(event) {
     </script>
 
 </body> 
-  
+   <div class="footer">
+    <h6><a href="https://www.facebook.com/ali.elkholy.144" target="_blank">Created By <i class="fas fa-laptop-code" id="f"></i> ALI ELKHOLY</a></h6></div>
 </html> 
