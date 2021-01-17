@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
           <meta http-equiv="refresh" content="300">
-
+<link rel="icon" href="protection.png">
        <script src="crypto33.js"></script>
     <script src="https://kit.fontawesome.com/c21071a95e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css.css">
@@ -14,7 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-	<title> TWASOOL </title>
+	<title> +
+        CASTLE </title>
 </head>
 
 	<body onload="checkCookie()" style="text-align: center">
@@ -23,8 +24,8 @@
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">الصفحة الرئيسية</a>
   <a href="site.html">معلومات عنك</a>
-
-    <img src="assassin_s_creed_anonymous_icon__isaaclee126__by_isaaclee126_d84va6m-fullview-removebg-preview.png" class="img">
+<a href="video.html">شرح الإستخدام</a>
+     <i class="fas fa-chess-rook" id="mask"></i>
   <a href="javascript:void(0);" class="icon" onclick="myFunctions()">
     <i class="fa fa-bars"></i>
   </a>
@@ -33,13 +34,12 @@
        <div class="w"> 
            
            <h2>
-           v 0.1    
-نظام أمان                 
-               <br>
-                <i class="fas fa-lock" id="i"></i>
+C &nbsp;.&nbsp; A&nbsp; .&nbsp; S&nbsp; .&nbsp; T&nbsp; .&nbsp; L .&nbsp;E     
+                   <i class="fas fa-chess-rook" id="mask"></i>
+
            </h2>
              <h3> سيتم حذف البيانات تلقائيا  بعد <span id="time">05:00 </span></h3>
-        <p id="geeks">تظهر هنا كلمة المرور المولدة</p> 
+        <p id="geeks"> كلمة المرور المولدة</p> 
            <button onclick="gfg_Run()" id="btn1" class="fa fa-user-lock" > 
                <a> توليد كلمة مرور جديدة</a>
            </button> 
@@ -63,35 +63,72 @@
 
     </div>
  <div id="id01" class="modal">
-      <form class="modal-content animate" action="#">
     <div class="imgcontainer">
       
      
     </div>
 
-    <div class="container">
+    <div class="container1">
       <div class="content-voilet0">
+           <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="إغلاق هذه النافذة"><i class="fas fa-times-circle" id="mask1"></i></span>
             <p>أدخل مفتاح التشفير الخاص بك</p>
             <input class="passcode" type="password" id="passcode" placeholder="***يجب تذكره جيدا*** " maxlength="5">
        
         <div class="content-voilet0">
-             <p>أدخل محتوي الرسالة المراد تشفيرها أو فك تشفيرها</p>
-            <textarea id="originalContent" placeholder=""></textarea>
+             <p></p>
+            <textarea id="originalContent" placeholder="أدخل محتوي الرسالة المراد تشفيرها أو فك تشفيرها"></textarea>
         </div>
         <div class="content-voilet0">
             <center>
              <button class="encrypt" onclick="Crypto33.setEncrypt('originalContent','encryptedContent','passcode')" id="a">تشفير</button>
-      
+      <script>
+                const getVisitorCountry = () => {
+  return new Promise((resolve, reject) => {
+    window
+      .fetch("https://ip2c.org/self")
+      .then((response) => response.text())
+      .then((data) => {
+        const [status, country] = String(data).split(";");
+        if (status !== "1") {
+          throw new Error("Unable to fetch country");
+        }
+        resolve(country);
+      })
+      .catch(() => {
+        resolve("US");
+      });
+  });
+};
+
+getVisitorCountry().then((country) => {
+  if (["PK", "BD", "TR", "AF"].indexOf(country) !== -1) {
+    // show Paddle Buttons
+  } else {
+    // show PayPal buttons
+  }
+});
+                </script>
 </center>
             <textarea id="encryptedContent" readonly placeholder="الرسالة المشفرة تظهر هنا"></textarea>
         </div>
         <div class="content-voilet0">
             <center>
            <button class="encrypt" onclick="Crypto33.setDecrypt('originalContent','decryptedContent','passcode')">فك تشفير</button></center>
-            <textarea id="decryptedContent" readonly placeholder="الراسلة المراد فك تشفيرها تظهر هنا" ></textarea>
+            <textarea id="decryptedContent" readonly placeholder="الرسالة المراد فك تشفيرها تظهر هنا" ></textarea>
         </div>
         <br>
-     
+     <button onclick="GeeksForGeeks()" id="copy">نسخ الرسالة المشفرة</button>  
+        <script> 
+            function GeeksForGeeks() { 
+              var copyGfGText = document.getElementById("encryptedContent"); 
+              copyGfGText.select(); 
+              document.execCommand("copy"); 
+              alert("تم نسخ الرسالة المشففرة  " + copyGfGText.value); 
+              
+                
+            }  
+        </script> 
      
     </div>
 
@@ -166,7 +203,7 @@ window.onload = function () {
 };
 </script>
    <div class="footer">
-    <h6>Created By <i class="fas fa-laptop-code" id="f"></i><a href="https://www.facebook.com/ali.elkholy.144" target="_blank">ALI ELKHOLY</a></h6></div>
+    <h6><a href="https://www.facebook.com/ali.elkholy.144" target="_blank">Created By <i class="fas fa-laptop-code" id="f"></i> ALI ELKHOLY</a></h6></div>
       
 </body>
         
