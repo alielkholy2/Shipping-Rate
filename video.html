@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-	<title> +
+	<title> 
         CASTLE </title>
 </head>
 
@@ -30,16 +30,40 @@
     <i class="fa fa-bars"></i>
   </a>
 </div> 
+        <div class="page-content">
+        <h3>     <i class="fas fa-chess-rook" id="mask2"></i>
+ القلعة</h3>
+        <h5 ><i class="fa fa-key"></i> توليد كلمات مرور صعبة التخمين </h5>
+        <h5 ><i class="fa fa-lock"></i> تشفير وفك تشقير الرسائل </h5>
+
+        </div>
+        
+        
               <center>
-                  <main>
-                  <video src="ss.mp4" autoplay muted loop>
+                  <button class="fa fa-video" id="btn" onclick="document.getElementById('id01').style.display='block'"> 
+                      <a href="#">
+                       فيديو شرح الإستخدام
+                      </a>
+    </button> 
+    <div id="id01" class="modal">
+    <div class="imgcontainer">
+      
+    </div>
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close2" title="إغلاق هذه النافذة"><i class="fas fa-times-circle" id="mask1"></i></span>
+    <div class="container1">
+      <div class="content-voilet0">
+           <main>
+                  <video src="ss.mp4"  muted controls>
                   </video>
                       </main>
-                   <button  id="btn1" class="fa fa-download" > 
+                
+        </center>
+        <div class="btn">
+   <button  id="btn" class="fa fa-download" > 
                <a href="Castle%20crypto.apk" download>  تحميل التطبيق </a>
            </button> 
-        </center>
-
+            </div>
 </body>
         
 </html>
